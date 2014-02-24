@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WhichAreYou</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="quizthumb_description">Quiz Thumbnail</string>
+    <string name="quizDescription">Quiz Description</string>
+    <string name="quizName">Quiz Name</string>
+
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutQuizList"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:gravity="left"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".QuizzesActivity" >
+
+    <TextView
+        android:id="@+id/quizName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignTop="@+id/quizImage"
+        android:layout_toRightOf="@+id/quizImage"
+        android:lines="@integer/quizNameLines"
+        android:maxLines="@integer/quizNameLines"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="@string/quizName"
+        android:textSize="@dimen/quizNameSize"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/quizDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quizName"
+        android:layout_toRightOf="@+id/quizImage"
+        android:lines="@integer/quizDescriptionLines"
+        android:maxLines="@integer/quizDescriptionLines"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="@string/quizDescription"
+        android:textAlignment="gravity"
+        android:textSize="@dimen/quizDescriptionSize"
+        android:textStyle="normal"
+        android:typeface="sans" />
+
+    <ImageView
+        android:id="@+id/quizImage"
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:contentDescription="@string/quizthumb_description"
+        android:maxHeight="90dp"
+        android:maxWidth="120dp"
+        android:padding="0dp"
+        android:src="@drawable/quizthumb" />
+
+</RelativeLayout>
